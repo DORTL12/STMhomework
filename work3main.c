@@ -140,13 +140,13 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_PIN)
 {
-	static uint32_t last_ms=0;
+	static uint32_t last2=0;
 	uint32_t now=HAL_GetTick();
 	if (GPIO_PIN==GPIO_PIN_0)
 	{
-		if ((now-last_ms)>=20U)
+		if ((now-last2)>=20U)
 		{
-			last_ms=now;
+			last2=now;
 			HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_0);
 		}
 	}
