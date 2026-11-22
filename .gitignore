@@ -1,0 +1,20 @@
+# Keil ????
+*.axf
+*.hex
+*.o
+*.d
+*.dep
+*.crf
+*.lnp
+*.map
+*.htm
+*.sct
+*.uvguix.*
+*.bak
+
+# MDK ??????? uvprojx?startup.s?ioc?
+**/MDK-ARM/work1/
+**/MDK-ARM/work2/
+**/MDK-ARM/work3/
+**/MDK-ARM/task1/
+**/MDK-ARM/LED_test/
